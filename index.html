@@ -1,0 +1,244 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Arkendz 아켄즈</title>
+<meta name="description" content="아켄즈 · 정우진. 브랜딩, 웹, 영상, 게임을 A부터 Z까지 혼자 만듭니다. If you can name it, I can make it.">
+<meta name="theme-color" content="#0b0b0c">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Arkendz">
+<meta property="og:title" content="Arkendz 아켄즈">
+<meta property="og:description" content="If you can name it, I can make it.">
+<meta property="og:url" content="https://arkendz.com/">
+<meta property="og:image" content="https://arkendz.com/og.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@1,500&family=IBM+Plex+Sans+KR:wght@400;500;600&display=swap">
+  <script type="module" crossorigin src="./assets/index-B9PWq4lS.js"></script>
+  <link rel="stylesheet" crossorigin href="./assets/index-D3xN5O-m.css">
+</head>
+<body>
+
+<div id="load" aria-hidden="true"><p><b>00</b></p><i></i></div>
+<div id="deep" aria-hidden="true"></div>
+<canvas id="sky" aria-hidden="true"></canvas>
+<div id="veil" aria-hidden="true"></div>
+<canvas id="fore" aria-hidden="true"></canvas>
+
+
+<main>
+  <!-- A. 명함이 날아와 눈앞에 탁 멈추고, 아래로 내려가 의뢰 카드로 놓인다. 그 사이 씨앗에서 행성들이 퍼진다 -->
+  <section class="door" id="a" aria-label="명함과 행성계">
+    <div class="stage" id="stage">
+      <div class="sr">
+        <h1>Arkendz 아켄즈 · 정우진</h1>
+        <p>If you can name it, I can make it. A부터 Z까지, 혼자 만듭니다.</p>
+      </div>
+      <div class="slam" id="slam" aria-hidden="true" hidden></div>
+
+
+      <div class="seed" aria-hidden="true"><i class="halo"></i><i class="core"></i><i class="plane"></i></div>
+
+      <div class="hub" id="hubui">
+        <button type="button" class="lang lab hub-tr" aria-label="언어 / Language"><span data-l="ko">KO</span><i>/</i><span data-l="en">EN</span></button>
+        <div class="hub-copy">
+          <button type="button" class="wm" id="replay" aria-label="Arkendz. 누르면 오프닝을 다시 봅니다">Arkendz</button>
+        </div>
+
+        <nav class="orbit" id="orbit" aria-label="세계 고르기">
+          <canvas class="arc" id="trail" aria-hidden="true"></canvas>
+          <a class="sat" href="#brand" data-view="w-brand" style="--t:var(--t-brand)">
+            <span class="sat-body" data-src="planets/glass-s-poster.webp" data-planet="glass"><i class="ph-sphere"></i><i class="sat-seam"></i></span>
+            <span class="sat-name"><em data-en="">Branding &amp; Web</em><b data-en="Branding &amp; Web">브랜딩·웹</b></span>
+          </a>
+          <a class="sat" href="#video" data-view="w-video" style="--t:var(--t-video)">
+            <span class="sat-body" data-src="planets/crystal-s-poster.webp" data-planet="crystal"><i class="ph-sphere"></i><i class="sat-seam"></i></span>
+            <span class="sat-name"><em data-en="">Film &amp; Channel</em><b data-en="Film &amp; Channel">영상·채널</b></span>
+          </a>
+          <a class="sat" href="#game" data-view="w-game" style="--t:var(--t-game)">
+            <span class="sat-body" data-src="planets/furnace-s-poster.webp" data-planet="furnace"><i class="ph-sphere"></i><i class="sat-seam"></i></span>
+            <span class="sat-name"><em data-en="">Games</em><b data-en="Games">게임</b></span>
+          </a>
+        </nav>
+
+        <a class="ask-card" href="#z">
+          <span class="ac-say">If you can name it, <br>I can make it.</span>
+          <span class="ac-go" data-en="Start a project">의뢰하기</span>
+        </a>
+      </div>
+    </div>
+  </section>
+</main>
+
+<!-- 세계: 행성을 누르면 그 행성이 커지며 열린다 -->
+<div class="views">
+
+  <section class="view world space" id="w-brand" data-hash="brand" style="--t:var(--t-brand)" aria-label="브랜딩·웹">
+    <div class="v-in">
+      <header class="v-bar pad">
+        <a class="v-back" href="#hub" data-en="← System">← 행성계</a>
+        <nav class="v-nav" aria-label="다른 세계"><a href="#brand" aria-current="page" data-en="Brand">브랜딩</a><a href="#video" data-en="Film">영상</a><a href="#game" data-en="Games">게임</a><a href="#z" data-en="Contact">의뢰</a><button type="button" class="lang lab" aria-label="언어 / Language"><span data-l="ko">KO</span><i>/</i><span data-l="en">EN</span></button></nav>
+      </header>
+      <div class="sys">
+        <div class="w-head pad">
+          <p class="en" data-en="">Branding &amp; Web</p>
+          <h2 data-en="Branding &amp; Web">브랜딩·웹</h2>
+        </div>
+        <div class="planet" data-src="planets/glass-s-poster.webp" data-planet="glass" role="img" aria-label="브랜딩·웹 행성. 옆으로 끌면 돌아갑니다.">
+          <div class="half top"><div class="body"><i class="ph-sphere"></i></div></div>
+          <div class="half bot"><div class="body"><i class="ph-sphere"></i></div></div>
+          <i class="p-gap"></i><i class="p-line"></i>
+        </div>
+      </div>
+      <div class="emerge">
+        <ul class="works" aria-label="브랜딩·웹 작업물">
+          <li class="work">
+            <div class="thumb"><div class="ph"><b>샤모니</b><span data-en="Images coming soon">사진 준비 중</span></div></div>
+            <div class="w-meta"><h3 data-en="Chamonix">샤모니</h3><time>2026</time></div>
+            <p class="w-line" data-en="Branding and website for a resort in Jeju">제주 리조트 브랜딩과 홈페이지</p>
+          </li>
+          <li class="work">
+            <div class="thumb"><img src="card/back.png" alt="아켄즈 명함 뒷면" width="900" height="508" loading="lazy" class="contain"></div>
+            <div class="w-meta"><h3 data-en="Arkendz">아켄즈</h3><time>2026.11</time></div>
+            <p class="w-line" data-en="Name, logo, business card">이름, 로고, 명함</p>
+          </li>
+          <li class="work">
+            <div class="thumb"><div class="ph"><b>스탠바이미</b><span data-en="Images coming soon">사진 준비 중</span></div></div>
+            <div class="w-meta"><h3 data-en="StandByMe">스탠바이미</h3><time>2026.10</time></div>
+            <p class="w-line" data-en="K-pop pilgrimage map app · Grand Prize, UIA Impact-thon">K-pop 성지순례 지도 앱 · UIA 임팩톤 대상</p>
+          </li>
+        </ul>
+        <p class="lede pad" data-en="From the name to the website.<br>Four vendors’ work, one message.">이름부터 홈페이지까지.<br>네 곳에 맡길 일을 연락 한 통에.</p>
+        <p class="v-next pad"><a href="#video"><span data-en="Next planet">다음 행성</span><b data-en="Film &amp; Channel →">영상·채널 →</b></a></p>
+      </div>
+    </div>
+  </section>
+
+  <section class="view world space" id="w-video" data-hash="video" style="--t:var(--t-video)" aria-label="영상·채널">
+    <div class="v-in">
+      <header class="v-bar pad">
+        <a class="v-back" href="#hub" data-en="← System">← 행성계</a>
+        <nav class="v-nav" aria-label="다른 세계"><a href="#brand" data-en="Brand">브랜딩</a><a href="#video" aria-current="page" data-en="Film">영상</a><a href="#game" data-en="Games">게임</a><a href="#z" data-en="Contact">의뢰</a><button type="button" class="lang lab" aria-label="언어 / Language"><span data-l="ko">KO</span><i>/</i><span data-l="en">EN</span></button></nav>
+      </header>
+      <div class="sys">
+        <div class="w-head pad">
+          <p class="en" data-en="">Film &amp; Channel</p>
+          <h2 data-en="Film &amp; Channel">영상·채널</h2>
+        </div>
+        <div class="planet" data-src="planets/crystal-s-poster.webp" data-planet="crystal" role="img" aria-label="영상·채널 행성. 옆으로 끌면 돌아갑니다.">
+          <div class="half top"><div class="body"><i class="ph-sphere"></i></div></div>
+          <div class="half bot"><div class="body"><i class="ph-sphere"></i></div></div>
+          <i class="p-gap"></i><i class="p-line"></i>
+        </div>
+      </div>
+      <div class="emerge">
+        <ul class="works" aria-label="영상·채널 작업물">
+          <li class="work">
+            <div class="thumb"><img src="works/caffiend.webp" alt="카피엔드 딸기 수플레 촬영 컷" width="640" height="800" loading="lazy"></div>
+            <div class="w-meta"><h3 data-en="Caffiend">카피엔드</h3><time>2026.11</time></div>
+            <p class="w-line" data-en="30-second promo film for a soufflé café in Yangdeok">양덕 수플레 카페 30초 홍보영상</p>
+          </li>
+          <li class="work">
+            <div class="thumb"><div class="ph"><b>루메노아 EP.1</b><span data-en="Images coming soon">사진 준비 중</span></div></div>
+            <div class="w-meta"><h3 data-en="Lumenoa EP.1">루메노아 EP.1</h3><time>2026.08</time></div>
+            <p class="w-line" data-en="The first reel, opening with a quest window">퀘스트창으로 여는 첫 릴스</p>
+          </li>
+        </ul>
+        <p class="lede pad" data-en="Planned, shot and edited solo.<br>And Lumenoa.">기획, 촬영, 편집을 혼자.<br>그리고 루메노아.</p>
+        <div class="pad">
+          <p class="out"><span class="k" data-en="Lumenoa channel">루메노아 채널</span><a href="https://www.instagram.com/lumenoakr/" target="_blank" rel="noopener">@lumenoakr</a></p>
+        </div>
+        <p class="v-next pad"><a href="#game"><span data-en="Next planet">다음 행성</span><b data-en="Games →">게임 →</b></a></p>
+      </div>
+    </div>
+  </section>
+
+  <section class="view world space" id="w-game" data-hash="game" style="--t:var(--t-game)" aria-label="게임">
+    <div class="v-in">
+      <header class="v-bar pad">
+        <a class="v-back" href="#hub" data-en="← System">← 행성계</a>
+        <nav class="v-nav" aria-label="다른 세계"><a href="#brand" data-en="Brand">브랜딩</a><a href="#video" data-en="Film">영상</a><a href="#game" aria-current="page" data-en="Games">게임</a><a href="#z" data-en="Contact">의뢰</a><button type="button" class="lang lab" aria-label="언어 / Language"><span data-l="ko">KO</span><i>/</i><span data-l="en">EN</span></button></nav>
+      </header>
+      <div class="planet forge" role="img" aria-label="대장간. 셔터가 열리고 쇳물이 게임이라는 글자를 채운 뒤 은빛으로 식는다.">
+        <canvas class="f-gl" tabindex="0"></canvas><canvas class="f-fx" aria-hidden="true"></canvas>
+        <p class="f-hint" aria-hidden="true"><b data-en="Pull all the way to open">끝까지 당겨야 열려요</b><small data-en="or wait — it opens by itself">놔두면 저절로 열려요</small></p>
+      </div>
+      <div class="sys">
+        <div class="w-head pad">
+          <p class="en" data-en="">Games</p>
+          <h2 data-en="Games">게임</h2>
+        </div>
+        <div class="planet" data-src="planets/furnace-s-poster.webp" data-planet="furnace" role="img" aria-label="게임 행성. 옆으로 끌면 돌아갑니다.">
+          <div class="half top"><div class="body"><i class="ph-sphere"></i></div></div>
+          <div class="half bot"><div class="body"><i class="ph-sphere"></i></div></div>
+          <i class="p-gap"></i><i class="p-line"></i>
+        </div>
+      </div>
+      <div class="emerge">
+        <ul class="works single" aria-label="게임">
+          <li class="work">
+            <div class="thumb capsule"><div class="ph"><b>숲속 사우나</b><span data-en="Screens coming soon">화면 준비 중</span></div></div>
+            <div class="w-meta"><h3 data-en="Forest Sauna (working title)">숲속 사우나 (가제)</h3><time>2026.11</time></div>
+            <p class="w-line" data-en="Solo development for Steam">스팀 1인 개발</p>
+          </li>
+        </ul>
+        <p class="lede pad" data-en="Built solo,<br>shipped on Steam.">혼자 만들어<br>스팀에 냅니다.</p>
+        <div class="pad">
+          <p class="out"><span class="k" data-en="Steam page">스팀 페이지</span><span class="soon" data-en="Coming soon">출시 준비 중</span></p>
+        </div>
+        <p class="v-next pad"><a href="#z"><span data-en="Seen it all?">다 보셨다면</span><b data-en="Start a project →">의뢰하기 →</b></a></p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Z. 이름을 적으면 틈이 닫힌다 -->
+  <section class="view ask" id="v-ask" data-hash="z" aria-label="의뢰">
+    <div class="v-in">
+      <header class="v-bar pad">
+        <a class="v-back" href="#hub" data-en="← System">← 행성계</a>
+        <nav class="v-nav" aria-label="다른 세계"><a href="#brand" data-en="Brand">브랜딩</a><a href="#video" data-en="Film">영상</a><a href="#game" data-en="Games">게임</a><a href="#z" aria-current="page" data-en="Contact">의뢰</a><button type="button" class="lang lab" aria-label="언어 / Language"><span data-l="ko">KO</span><i>/</i><span data-l="en">EN</span></button></nav>
+      </header>
+      <div class="pad ask-body">
+        <form id="ask-form" novalidate>
+          <p class="say">If you can name it,</p>
+          <label class="sr" for="ask-name">만들고 싶은 것의 이름</label>
+          <div class="slit" id="slit">
+            <input id="ask-name" name="name" type="text" autocomplete="off" maxlength="60" placeholder="만들고 싶은 것의 이름" data-en-placeholder="The name of what you want made">
+            <span class="ghost" id="ghost" aria-hidden="true"></span>
+          </div>
+          <p class="err" id="ask-err" role="status"></p>
+          <p class="say">I can make it.</p>
+          <button type="submit" id="ask-send" data-en="Seal it">틈 닫기</button>
+        </form>
+
+        <div class="draft" id="draft" hidden>
+          <p class="sealed" id="sealed"></p>
+          <dl>
+            <dt data-en="To">받는 사람</dt><dd id="d-to">woojin.arkendz@gmail.com</dd>
+            <dt data-en="Subject">제목</dt><dd id="d-subj"></dd>
+          </dl>
+          <div class="row">
+            <a class="btn" id="d-open" href="#" target="_blank" rel="noopener" data-en="Send by email">메일로 보내기</a>
+            <button type="button" class="btn ghost-btn" id="d-copy" data-en="Copy address">주소 복사</button>
+          </div>
+          <p class="note" id="d-note" data-en="If your mail app does not open, copy the address and write to me.">메일 앱이 안 열리면 주소를 복사해 보내주세요.</p>
+        </div>
+
+        <div class="contact">
+          <p><span class="k" data-en="Email">메일</span><span class="v">woojin.arkendz@gmail.com</span></p>
+          <p><span class="k" data-en="Instagram">인스타그램</span><span class="v">@lumenoakr</span></p>
+          <p><span class="k" data-en="Web">웹</span><span class="v">arkendz.com</span></p>
+        </div>
+        <p class="endmark"><span class="az-mark">[A–Z]</span><span>Arkendz · 2026</span></p>
+      </div>
+    </div>
+  </section>
+</div>
+
+</body>
+</html>

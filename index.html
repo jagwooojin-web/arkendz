@@ -2,10 +2,12 @@
 <html lang="ko">
 <head>
 <meta charset="utf-8">
+<meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self' https://fonts.googleapis.com; font-src https://fonts.gstatic.com; img-src 'self' data: blob:; connect-src 'self'; object-src 'none'; base-uri 'self'; form-action 'self'">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title>Arkendz 아켄즈</title>
 <meta name="description" content="아켄즈 · 정우진. 브랜딩, 웹, 영상, 게임을 A부터 Z까지 혼자 만듭니다. If you can name it, I can make it.">
 <meta name="theme-color" content="#0b0b0c">
+<meta name="referrer" content="strict-origin-when-cross-origin">
 <link rel="icon" href="favicon.svg" type="image/svg+xml">
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="Arkendz">
@@ -19,8 +21,8 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@1,500&family=IBM+Plex+Sans+KR:wght@400;500;600&display=swap">
-  <script type="module" crossorigin src="./assets/index-B9PWq4lS.js"></script>
-  <link rel="stylesheet" crossorigin href="./assets/index-D3xN5O-m.css">
+  <script type="module" crossorigin src="./assets/index-DH-DdaXk.js"></script>
+  <link rel="stylesheet" crossorigin href="./assets/index-BSp1C6gG.css">
 </head>
 <body>
 
@@ -52,15 +54,15 @@
 
         <nav class="orbit" id="orbit" aria-label="세계 고르기">
           <canvas class="arc" id="trail" aria-hidden="true"></canvas>
-          <a class="sat" href="#brand" data-view="w-brand" style="--t:var(--t-brand)">
+          <a class="sat" href="#brand" data-view="w-brand">
             <span class="sat-body" data-src="planets/glass-s-poster.webp" data-planet="glass"><i class="ph-sphere"></i><i class="sat-seam"></i></span>
             <span class="sat-name"><em data-en="">Branding &amp; Web</em><b data-en="Branding &amp; Web">브랜딩·웹</b></span>
           </a>
-          <a class="sat" href="#video" data-view="w-video" style="--t:var(--t-video)">
+          <a class="sat" href="#video" data-view="w-video">
             <span class="sat-body" data-src="planets/crystal-s-poster.webp" data-planet="crystal"><i class="ph-sphere"></i><i class="sat-seam"></i></span>
             <span class="sat-name"><em data-en="">Film &amp; Channel</em><b data-en="Film &amp; Channel">영상·채널</b></span>
           </a>
-          <a class="sat" href="#game" data-view="w-game" style="--t:var(--t-game)">
+          <a class="sat" href="#game" data-view="w-game">
             <span class="sat-body" data-src="planets/furnace-s-poster.webp" data-planet="furnace"><i class="ph-sphere"></i><i class="sat-seam"></i></span>
             <span class="sat-name"><em data-en="">Games</em><b data-en="Games">게임</b></span>
           </a>
@@ -78,7 +80,7 @@
 <!-- 세계: 행성을 누르면 그 행성이 커지며 열린다 -->
 <div class="views">
 
-  <section class="view world space" id="w-brand" data-hash="brand" style="--t:var(--t-brand)" aria-label="브랜딩·웹">
+  <section class="view world space" id="w-brand" data-hash="brand" aria-label="브랜딩·웹">
     <div class="v-in">
       <header class="v-bar pad">
         <a class="v-back" href="#hub" data-en="← System">← 행성계</a>
@@ -119,7 +121,7 @@
     </div>
   </section>
 
-  <section class="view world space" id="w-video" data-hash="video" style="--t:var(--t-video)" aria-label="영상·채널">
+  <section class="view world space" id="w-video" data-hash="video" aria-label="영상·채널">
     <div class="v-in">
       <header class="v-bar pad">
         <a class="v-back" href="#hub" data-en="← System">← 행성계</a>
@@ -151,14 +153,14 @@
         </ul>
         <p class="lede pad" data-en="Planned, shot and edited solo.<br>And Lumenoa.">기획, 촬영, 편집을 혼자.<br>그리고 루메노아.</p>
         <div class="pad">
-          <p class="out"><span class="k" data-en="Lumenoa channel">루메노아 채널</span><a href="https://www.instagram.com/lumenoakr/" target="_blank" rel="noopener">@lumenoakr</a></p>
+          <p class="out"><span class="k" data-en="Lumenoa channel">루메노아 채널</span><a href="https://www.instagram.com/lumenoakr/" target="_blank" rel="noopener noreferrer">@lumenoakr</a></p>
         </div>
         <p class="v-next pad"><a href="#game"><span data-en="Next planet">다음 행성</span><b data-en="Games →">게임 →</b></a></p>
       </div>
     </div>
   </section>
 
-  <section class="view world space" id="w-game" data-hash="game" style="--t:var(--t-game)" aria-label="게임">
+  <section class="view world space" id="w-game" data-hash="game" aria-label="게임">
     <div class="v-in">
       <header class="v-bar pad">
         <a class="v-back" href="#hub" data-en="← System">← 행성계</a>
@@ -223,7 +225,7 @@
             <dt data-en="Subject">제목</dt><dd id="d-subj"></dd>
           </dl>
           <div class="row">
-            <a class="btn" id="d-open" href="#" target="_blank" rel="noopener" data-en="Send by email">메일로 보내기</a>
+            <a class="btn" id="d-open" href="#" target="_blank" rel="noopener noreferrer" data-en="Send by email">메일로 보내기</a>
             <button type="button" class="btn ghost-btn" id="d-copy" data-en="Copy address">주소 복사</button>
           </div>
           <p class="note" id="d-note" data-en="If your mail app does not open, copy the address and write to me.">메일 앱이 안 열리면 주소를 복사해 보내주세요.</p>

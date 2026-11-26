@@ -21,12 +21,12 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@1,500&family=IBM+Plex+Sans+KR:wght@400;500;600&display=swap">
-  <script type="module" crossorigin src="./assets/index-DXHNdIBq.js"></script>
-  <link rel="stylesheet" crossorigin href="./assets/index-yrBZ9Wjm.css">
+  <script type="module" crossorigin src="./assets/index-B_aSgQVS.js"></script>
+  <link rel="stylesheet" crossorigin href="./assets/index-DdgEnnyP.css">
 </head>
 <body>
 
-<div id="load" aria-hidden="true"><p><b>00</b></p><i></i></div>
+<div id="load" aria-hidden="true"><canvas></canvas></div>
 <div id="deep" aria-hidden="true"></div>
 <canvas id="sky" aria-hidden="true"></canvas>
 <div id="veil" aria-hidden="true"></div>
@@ -69,6 +69,23 @@
         </nav>
 
         <button type="button" class="hub-down lab" id="down" data-en="Work ↓">작업물 ↓</button>
+
+        <button type="button" class="seed-hit" id="me-go" aria-expanded="false" aria-controls="me" aria-label="정우진 소개 보기"><span class="seed-name" data-en="Woojin Jung">정우진</span></button>
+        <div class="me-shade" id="me-shade" aria-hidden="true"></div>
+        <section class="me" id="me" aria-hidden="true" aria-label="정우진 소개">
+          <p class="me-who"><span data-en="Woojin Jung">정우진</span><span class="me-org">Arkendz</span></p>
+          <h2 class="me-say" data-en="Whatever you need,<br>made start to finish.">무엇이든 처음부터<br>끝까지 만듭니다</h2>
+          <p class="me-body" data-en="Arkendz is my one-person studio. Logos, websites, apps, videos, games, AI automation: I make it from start to finish.">아켄즈는 정우진의 1인 스튜디오입니다. 로고, 홈페이지, 앱, 영상, 게임, AI 자동화까지 처음부터 끝까지 혼자 만듭니다.</p>
+          <ul class="me-works">
+            <li><a href="#video"><img src="works/caffiend.webp" alt="" width="704" height="1210" loading="lazy"><b data-en="Caffiend">카피엔드</b><span data-en="Promo film">홍보영상</span></a></li>
+            <li><a href="#game"><img src="works/sauna.webp" alt="" width="1200" height="1028" loading="lazy"><b data-en="Forest Sauna">숲속 사우나</b><span data-en="Steam game">스팀 게임</span></a></li>
+            <li><a href="#brand"><img src="works/chamoni.webp" alt="" width="1200" height="967" loading="lazy"><b data-en="Chamoni">샤모니</b><span data-en="Brand &amp; website">브랜딩·홈페이지</span></a></li>
+          </ul>
+          <div class="me-row">
+            <a class="me-ask" href="#z" data-en="Start a project">의뢰하기</a>
+            <button type="button" class="me-close" id="me-close" data-en="Look around">둘러보기</button>
+          </div>
+        </section>
 
         <a class="ask-card" href="#z">
           <span class="ac-say">If you can name it, <br>I can make it.</span>

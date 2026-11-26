@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="ko">
+<html lang="ko" data-folio="off">
 <head>
 <meta charset="utf-8">
 <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self' https://fonts.googleapis.com; font-src https://fonts.gstatic.com; img-src 'self' data: blob:; connect-src 'self'; object-src 'none'; base-uri 'self'; form-action 'self'">
@@ -21,8 +21,8 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@1,500&family=IBM+Plex+Sans+KR:wght@400;500;600&display=swap">
-  <script type="module" crossorigin src="./assets/index-pMkTGgM6.js"></script>
-  <link rel="stylesheet" crossorigin href="./assets/index-BjJf37_x.css">
+  <script type="module" crossorigin src="./assets/index-DXHNdIBq.js"></script>
+  <link rel="stylesheet" crossorigin href="./assets/index-yrBZ9Wjm.css">
 </head>
 <body>
 
@@ -68,11 +68,91 @@
           </a>
         </nav>
 
+        <button type="button" class="hub-down lab" id="down" data-en="Work ↓">작업물 ↓</button>
+
         <a class="ask-card" href="#z">
           <span class="ac-say">If you can name it, <br>I can make it.</span>
           <span class="ac-go" data-en="Start a project">의뢰하기</span>
         </a>
       </div>
+    </div>
+  </section>
+
+  <!-- 아래로 내리면: 행성 없는 일반 포폴. 소개, 분야와 작업물, 의뢰.
+       브랜딩·웹, 영상·채널, 게임의 작업물 글은 위쪽 세계(.view.world) 안의 것을 그대로 읽어 온다(main.js). 글은 한 곳에서만 고친다 -->
+  <section class="folio" id="folio" aria-label="소개와 작업물">
+    <div class="pf-in">
+
+      <section class="pf-sec pf-about">
+        <p class="lab pf-k" data-en="About">소개</p>
+        <div class="pf-v">
+          <h2 class="pf-say" data-en="Whatever you need,<br>made start to finish.">무엇이든 처음부터<br>끝까지 만듭니다</h2>
+          <p class="pf-body" data-en="Arkendz is Woojin Jung’s one-person studio. Logos, websites, apps, videos, games, AI automation: whatever you need, I make it from start to finish.">아켄즈는 정우진의 1인 스튜디오입니다. 로고, 홈페이지, 앱, 영상, 게임, AI 자동화까지 원하는 것을 처음부터 끝까지 혼자 만듭니다.</p>
+          <ul class="pf-facts">
+            <li data-en="Branding to automation">브랜딩부터 자동화까지</li>
+            <li data-en="Solo, start to finish">기획부터 완성까지 혼자</li>
+            <li data-en="Full refund if I can’t deliver">못 하면 환불합니다</li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="pf-sec pf-field" data-from="w-brand">
+        <header class="pf-k"><p class="lab">01</p><h2></h2><p class="pf-lede"></p></header>
+        <ul class="pf-works pf-v"></ul>
+      </section>
+
+      <section class="pf-sec pf-field" data-from="w-video">
+        <header class="pf-k"><p class="lab">02</p><h2></h2><p class="pf-lede"></p></header>
+        <ul class="pf-works pf-v"></ul>
+      </section>
+
+      <section class="pf-sec pf-field" data-from="w-game">
+        <header class="pf-k"><p class="lab">03</p><h2></h2><p class="pf-lede"></p></header>
+        <ul class="pf-works pf-v"></ul>
+      </section>
+
+      <section class="pf-sec pf-field">
+        <header class="pf-k"><p class="lab">04</p><h2 data-en="AI Automation">AI 자동화</h2><p class="pf-lede" data-en="Repetitive work?<br>A program can do it for you.">반복하는 일은<br>프로그램이 대신합니다</p></header>
+        <ul class="pf-works pf-v">
+          <li class="pf-work">
+            <div class="pf-top"><h3 data-en="Auto-Sorting Program">자동 분류 프로그램</h3><span class="pf-year">2026.07</span></div>
+            <p class="pf-line" data-en="A program that sorts inventory photos into folders">물품 사진을 폴더별로 나눠 주는 프로그램</p>
+            <dl class="pf-spec">
+              <div><dt>Role</dt><dd data-en="Planning and development">기획, 개발 전부</dd></div>
+              <div><dt>Story</dt><dd><span data-en="Each item photo had to be moved into folders by hand.">물품 사진을 폴더를 만들어 하나씩 옮겼습니다.</span><span data-en="I made a program that creates the folders and sorts them.">폴더 만들기부터 분류까지 자동으로 하게 했습니다.</span><span data-en="The same job now takes a quarter of the time.">같은 일을 4분의 1 시간에 끝내게 됐습니다.</span></dd></div>
+            </dl>
+          </li>
+        </ul>
+      </section>
+
+      <section class="pf-sec pf-ask">
+        <p class="lab pf-k" data-en="Contact">의뢰</p>
+        <div class="pf-v">
+          <div class="offer">
+            <h3 class="lab" data-en="What you can ask for">이런 걸 맡길 수 있습니다</h3>
+            <ul>
+              <li data-en="Logos and business cards">로고와 명함</li>
+              <li data-en="Websites and apps">홈페이지·앱 만들기</li>
+              <li data-en="AI automation for repetitive work">반복 업무 AI 자동화</li>
+              <li data-en="Promo videos">홍보영상 촬영과 편집</li>
+              <li class="more" data-en="Too many to list them all">다 못 적어 줄였습니다</li>
+            </ul>
+            <h3 class="lab" data-en="How it goes">진행 순서</h3>
+            <ol>
+              <li data-en="Tell me by email">메일로 알려 주세요</li>
+              <li data-en="I show you a draft">시안을 보여 드립니다</li>
+              <li data-en="I finish and hand it over">완성해서 넘겨 드립니다</li>
+            </ol>
+          </div>
+          <a class="pf-go" href="#z"><span class="pf-go-say">If you can name it, I can make it.</span><b data-en="Start a project →">의뢰하기 →</b></a>
+          <div class="contact">
+            <p><span class="k" data-en="Email">메일</span><span class="v">woojin.arkendz@gmail.com</span></p>
+            <p><span class="k" data-en="Instagram">인스타그램</span><span class="v">@lumenoakr</span></p>
+          </div>
+          <p class="endmark"><span class="az-mark">[A–Z]</span><span>Arkendz · 2026</span></p>
+        </div>
+      </section>
+
     </div>
   </section>
 </main>
@@ -100,11 +180,11 @@
       <div class="emerge">
         <ul class="works" aria-label="브랜딩·웹 작업물">
           <li class="work">
-            <div class="thumb"><div class="ph"><b>샤모니</b><span data-en="Images coming soon">사진 준비 중</span></div></div>
-            <div class="w-meta"><h3 data-en="Chamoni">샤모니</h3><time>2026</time></div>
+            <div class="thumb"><img src="works/chamoni.webp" alt="샤모니 리조트 홈페이지 화면 (공개 전이라 가려 둠)" width="1200" height="967" loading="lazy" class="board"></div>
+            <div class="w-meta"><h3 data-en="Chamoni">샤모니</h3><time>2026.11</time></div>
             <p class="w-line" data-en="Branding and website for Chamoni, a resort in Jeju">제주 리조트 샤모니의 브랜딩과 홈페이지</p>
             <p class="w-role" data-en="Branding and website">브랜딩, 홈페이지</p>
-            <ol class="w-story"><li data-en="Questions came from everywhere, and booking sites took big fees.">문의는 흩어지고, 예약 사이트 수수료는 컸습니다.</li><li data-en="I put answers and direct booking on one website.">답과 직접 예약을 홈페이지 한 곳에 모았습니다.</li><li data-en="It is now in its final stage.">지금 마무리 단계입니다.</li></ol>
+            <ol class="w-story"><li data-en="Questions came from everywhere, and booking sites took big fees.">문의는 흩어지고, 예약 사이트 수수료는 컸습니다.</li><li data-en="I’m bringing answers and direct booking into one website.">답과 직접 예약을 홈페이지 한 곳에 모으고 있습니다.</li><li data-en="It is now in its final stage.">지금 마무리 단계입니다.</li></ol>
           </li>
           <li class="work">
             <div class="thumb"><img src="card/back.png" alt="아켄즈 명함 뒷면" width="900" height="508" loading="lazy" class="contain"></div>
@@ -190,14 +270,23 @@
         </div>
       </div>
       <div class="emerge">
-        <ul class="works single" aria-label="게임">
+        <ul class="works" aria-label="게임">
           <li class="work">
-            <div class="thumb capsule"><div class="ph"><b>숲속 사우나</b><span data-en="Screens coming soon">화면 준비 중</span></div></div>
-            <div class="w-meta"><h3 data-en="Forest Sauna (working title)">숲속 사우나 (가제)</h3><time data-en="2026.11 (in development)">2026.11 (개발 중)</time></div>
+            <div class="thumb"><img src="works/sauna.webp" alt="숲속 사우나 게임 화면 세 장: 밤의 온천, 낮의 밭, 동굴의 왕슬라임" width="1200" height="1028" loading="lazy" class="top board"></div>
+            <div class="w-meta"><h3 data-en="Forest Sauna (working title)">숲속 사우나 (가제)</h3><time data-en="2026.11 (coming soon)">2026.11 (준비 중)</time></div>
             <p class="w-line" data-en="A Steam game: build a sauna and hot spring in a forest">숲속에 사우나와 온천을 짓는 스팀 게임</p>
             <p class="w-role" data-en="Design, development, release">기획, 개발, 출시 전부</p>
             <ol class="w-story"><li data-en="It was my first try at releasing a Steam game alone.">혼자 스팀에 게임을 내는 첫 도전이었습니다.</li><li data-en="You fish, farm, and explore to build a sauna and hot spring.">낚시, 농사, 탐험으로 사우나와 온천을 짓습니다.</li><li data-en="It is now getting ready for release on Steam.">지금 스팀 출시를 준비하고 있습니다.</li></ol>
           </li>
+          <li class="work">
+            <div class="thumb"><img src="works/secret-a.webp" alt="준비 중인 게임 화면 (가려 둠)" width="1200" height="675" loading="lazy" class="board"></div>
+            <div class="w-meta"><h3 data-en="Secret Project A">비밀 프로젝트 A</h3><time data-en="Coming soon">준비 중</time></div>
+            <p class="w-line" data-en="A new game in development. Revealed soon.">개발 중인 새 게임입니다. 곧 공개합니다.</p>
+          </li>
+          <li class="work">
+            <div class="thumb"><img src="works/secret-b.webp" alt="준비 중인 게임 화면 (가려 둠)" width="1200" height="675" loading="lazy" class="board"></div>
+            <div class="w-meta"><h3 data-en="Secret Project B">비밀 프로젝트 B</h3><time data-en="Coming soon">준비 중</time></div>
+            <p class="w-line" data-en="A new game in development. Revealed soon.">개발 중인 새 게임입니다. 곧 공개합니다.</p>
         </ul>
         <p class="lede pad" data-en="Made by one person.<br>Coming soon to Steam.">혼자 만들어<br>스팀 출시를 앞두고 있습니다</p>
         <div class="pad">
@@ -239,23 +328,6 @@
             <button type="button" class="btn ghost-btn" id="d-copy" data-en="Copy address">주소 복사</button>
           </div>
           <p class="note" id="d-note" data-en="If your mail app does not open, copy the address and write to me.">메일 앱이 안 열리면 주소를 복사해 보내주세요.</p>
-        </div>
-
-        <div class="offer">
-          <h3 class="lab" data-en="What you can ask for">이런 걸 맡길 수 있습니다</h3>
-          <ul>
-            <li data-en="Logos and business cards">로고와 명함</li>
-            <li data-en="Websites and apps">홈페이지·앱 만들기</li>
-            <li data-en="AI automation for repetitive work">반복 업무 AI 자동화</li>
-            <li data-en="Promo videos">홍보영상 촬영과 편집</li>
-            <li class="more" data-en="Too many to list them all">다 못 적어 줄였습니다</li>
-          </ul>
-          <h3 class="lab" data-en="How it goes">진행 순서</h3>
-          <ol>
-            <li data-en="Tell me by email">메일로 알려 주세요</li>
-            <li data-en="I show you a draft">시안을 보여 드립니다</li>
-            <li data-en="I finish and hand it over">완성해서 넘겨 드립니다</li>
-          </ol>
         </div>
 
         <div class="contact">

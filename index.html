@@ -2,7 +2,7 @@
 <html lang="ko" data-folio="off">
 <head>
 <meta charset="utf-8">
-<meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self' https://fonts.googleapis.com; font-src https://fonts.gstatic.com; img-src 'self' data: blob:; connect-src 'self'; object-src 'none'; base-uri 'self'; form-action 'self'">
+<meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self' https://fonts.googleapis.com; font-src https://fonts.gstatic.com; img-src 'self' data: blob:; connect-src 'self' https://api.web3forms.com; object-src 'none'; base-uri 'self'; form-action 'self'">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title>Arkendz 아켄즈</title>
 <meta name="description" content="아켄즈는 정우진의 1인 스튜디오입니다. 로고, 홈페이지, 앱, 영상, 게임, AI 자동화까지 원하는 것을 처음부터 끝까지 만듭니다.">
@@ -21,8 +21,8 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@1,500&family=IBM+Plex+Sans+KR:wght@400;500;600&display=swap">
-  <script type="module" crossorigin src="./assets/index-B_aSgQVS.js"></script>
-  <link rel="stylesheet" crossorigin href="./assets/index-DdgEnnyP.css">
+  <script type="module" crossorigin src="./assets/index-aujULmSa.js"></script>
+  <link rel="stylesheet" crossorigin href="./assets/index-C8mX76l0.css">
 </head>
 <body>
 
@@ -332,6 +332,18 @@
 
         <div class="draft" id="draft" hidden>
           <p class="sealed" id="sealed"></p>
+          <div class="send" id="send" hidden>
+            <label class="lab" for="ask-contact" data-en="Where can I reach you?">어디로 답하면 될까요</label>
+            <input id="ask-contact" type="text" autocomplete="off" maxlength="80" placeholder="전화번호, 메일, 카톡 아이디 중 하나" data-en-placeholder="Phone, email or KakaoTalk ID">
+            <label class="lab" for="ask-more" data-en="Anything else (optional)">더 하고 싶은 말 (안 적어도 됩니다)</label>
+            <textarea id="ask-more" rows="3" maxlength="600" placeholder="언제까지, 예산, 참고할 것" data-en-placeholder="By when, budget, references"></textarea>
+            <input type="text" id="ask-hp" class="sr" tabindex="-1" autocomplete="off" aria-hidden="true">
+            <p class="err" id="send-err" role="status"></p>
+            <button type="button" class="btn" id="d-send" data-en="Send">보내기</button>
+            <p class="note" data-en="Your contact is used only to reply to you.">적어 주신 연락처는 답장에만 씁니다.</p>
+          </div>
+          <p class="sent" id="sent" hidden data-en="Sent. I will get back to you soon.">보냈습니다. 곧 연락드리겠습니다.</p>
+          <p class="lab or" id="or" hidden data-en="Or by email">또는 메일로</p>
           <dl>
             <dt data-en="To">받는 사람</dt><dd id="d-to">woojin.arkendz@gmail.com</dd>
             <dt data-en="Subject">제목</dt><dd id="d-subj"></dd>
